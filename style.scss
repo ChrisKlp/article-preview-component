@@ -27,8 +27,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-light-grayish-blue;
     min-height: 100vh;
+    background-color: $color-light-grayish-blue;
+    overflow: hidden;
 }
 
 .article {
@@ -36,6 +37,7 @@ body {
     background-color: $color-white;
     border-radius: 0.8rem;
     overflow: hidden;
+    box-shadow: 0 3rem 3rem rgba($color-grayish-blue, 0.2);
 
     &__image {
         background: url('../images/drawers.jpg') no-repeat center 25% / cover;
@@ -167,7 +169,7 @@ body {
 @media (min-width: 768px) {
     .article {
         display: grid;
-        grid: auto auto / 28.5rem auto;
+        grid: repeat(2, auto) / minmax(0rem, 28.5rem) auto;
         max-width: 73rem;
         overflow: visible;
 
