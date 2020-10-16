@@ -23,12 +23,16 @@ body {
 }
 
 .wrapper {
-    padding: 7.4rem 2.4rem;
+    padding: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $color-light-grayish-blue;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .article {
+    max-width: 32.7rem;
     background-color: $color-white;
     border-radius: 0.8rem;
     overflow: hidden;
@@ -142,7 +146,7 @@ body {
     width: 2rem;
     height: 2rem;
     color: $color-white;
-    transition: color .3s;
+    transition: color 0.3s;
 
     &:hover {
         color: $color-grayish-blue;
@@ -161,12 +165,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    .wrapper {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .article {
         display: grid;
         grid: auto auto / 28.5rem auto;

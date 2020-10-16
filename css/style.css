@@ -18,12 +18,22 @@ body {
 }
 
 .wrapper {
-  padding: 7.4rem 2.4rem;
+  padding: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ecf2f8;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .article {
+  max-width: 32.7rem;
   background-color: white;
   border-radius: 0.8rem;
   overflow: hidden;
@@ -157,8 +167,8 @@ body {
   width: 2rem;
   height: 2rem;
   color: white;
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .icon:hover {
@@ -177,18 +187,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .wrapper {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .article {
     display: -ms-grid;
     display: grid;
