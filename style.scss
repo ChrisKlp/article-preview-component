@@ -169,7 +169,7 @@ body {
 @media (min-width: 768px) {
     .article {
         display: grid;
-        grid: repeat(2, auto) / minmax(0rem, 28.5rem) auto;
+        grid: repeat(2, auto) / 28.5rem auto;
         max-width: 73rem;
         overflow: visible;
 
